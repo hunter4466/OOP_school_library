@@ -5,7 +5,7 @@ class Person
     @parent_permission = parent_permission
   end
 
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :parent_permission
   attr_reader :id
 
   def can_use_services?
@@ -18,31 +18,3 @@ class Person
     return true if @age >= 18
   end
 end
-
-class Student < Person
-  def initialize(classroom)
-    super
-    @classroom = classroom
-  end
-
-  def play_hooky
-    "¯\(ツ)/¯"
-  end
-end
-
-class Teacher < Person
-  def initialize(specialization)
-    super
-    @specialization = specialization
-  end
-
-  def can_use_services?
-    true
-  end
-end
-
-teacher = Teacher.new('Algorithm professor')
-teacher.name = 'Mario'
-puts teacher.can_use_services?
-puts teacher.name
-
