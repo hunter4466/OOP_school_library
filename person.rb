@@ -1,8 +1,5 @@
 class Person
-  @age
-  @name
-  @parent_permission
-  def initialize(age, name: 'Unknown', parent_permission: true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     @age = age
     @name = name
     @parent_permission = parent_permission
@@ -44,6 +41,5 @@ class Teacher < Person
   end
 end
 
-teacher = Teacher.new(30, Mario)
-
+teacher = Teacher.new(18, 'Mario')
 puts teacher.name
