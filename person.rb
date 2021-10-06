@@ -41,5 +41,8 @@ class Teacher < Person
   end
 end
 
-teacher = Teacher.new(18, 'Mario')
+teacher = Teacher.new('Algorithm professor')
+teacher.name = 'Mario'
+puts teacher.can_use_services?
 puts teacher.name
+
