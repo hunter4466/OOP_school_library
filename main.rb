@@ -3,7 +3,7 @@ require_relative 'Student'
 require_relative 'Corrector'
 
 teacher = Teacher.new('Algorithm professor')
-teacher.name = 'mario'
+teacher.name = 'mariowithmorethantencharacters'
 
 puts teacher.can_use_services?
 puts teacher.name
