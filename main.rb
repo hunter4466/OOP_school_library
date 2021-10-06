@@ -9,4 +9,3 @@ puts teacher.can_use_services?
 puts teacher.name
 teacher.validate_name
 puts teacher.name
-
