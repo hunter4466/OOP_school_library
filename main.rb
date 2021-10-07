@@ -1,12 +1,11 @@
 require_relative 'Teacher'
 require_relative 'Student'
+require_relative 'Corrector'
 
 teacher = Teacher.new('Algorithm professor')
-teacher.name = 'Mario'
+teacher.name = 'mariowithmorethantencharacters'
 
 puts teacher.can_use_services?
 puts teacher.name
-
-student = Student.new('301')
-
-puts student.age
+teacher.validate_name
+puts teacher.name
