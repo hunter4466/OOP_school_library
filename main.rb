@@ -29,5 +29,12 @@ p classroom.label
 classroom.students.each { |e| p e.name }
 
 rental1 = Rental.new('05/05/2020', book1, mario)
+rental2 = Rental.new('05/05/2020', book2, leo)
+rental3 = Rental.new('05/05/2020', book3, sebas)
 
 p rental1.book.title
+p rental1.book.author
+p rental2.book.title
+p rental2.book.author
+p rental3.book.title
+p rental3.book.author
