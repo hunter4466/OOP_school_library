@@ -6,6 +6,7 @@ class Person
     @name = name
     @parent_permission = parent_permission
     @corrector = Corrector.new
+    @rentals = []
   end
 
   attr_accessor :name, :age, :parent_permission, :corrector
@@ -17,6 +18,10 @@ class Person
 
   def can_use_services?
     return true if @age >= 18 || parent_permission
+  end
+
+  def add_rental(rental)
+    @rentals << rental
   end
 
   private
