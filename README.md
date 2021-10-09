@@ -12,7 +12,7 @@ Script in Ruby to store Students and teachers
 
 1. Clone the repo
 
-   ```sh
+   ```sh 
    git@github.com:hunter4466/OOP_school_library.git
    ```
 

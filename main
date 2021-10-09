@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require_relative 'Teacher'
 require_relative 'Student'
 require_relative 'Corrector'
