@@ -1,6 +1,6 @@
-# Morse Message Decoder
+# OOP School Library
 
-Script in Ruby to store Students and teachers
+Script in Ruby to store Students, teachers and books
 
 ## Built With
 

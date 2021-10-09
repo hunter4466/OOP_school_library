@@ -1,4 +1,4 @@
-require_relative 'Corrector'
+require_relative 'corrector'
 
 class Person
   def initialize(age, name = 'Unknown', parentperm: true)

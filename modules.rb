@@ -1,7 +1,7 @@
-require_relative 'Book'
-require_relative 'Teacher'
-require_relative 'Student'
-require_relative 'Rental'
+require_relative 'book'
+require_relative 'teacher'
+require_relative 'student'
+require_relative 'rental'
 
 def continuefunc
   puts ' '
@@ -140,7 +140,7 @@ def create_rental(bolist, stlist, telist, rentalsarray)
   print 'Date: '
   date = gets.chomp
   rental = Rental.new(date, bolist[Integer(book)], personsarray[Integer(person)])
-  rentalsarray << rental
+  rentalsarray << rental.to_s
   puts ' '
   puts 'Rental created successfully'
   puts ' '
