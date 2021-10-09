@@ -18,7 +18,7 @@ Script in Ruby to store Students and teachers
 
 ### Usage
 
-1. Execute program
+1. Execute program 
 
    ```sh
    ruby main.rb
