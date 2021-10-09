@@ -11,7 +11,7 @@ class Person
   end
 
   attr_accessor :name, :age, :parentperm, :corrector
-  attr_reader :id
+  attr_reader :id, :rentals
 
   def validate_name
     @name = @corrector.correct_name(@name)

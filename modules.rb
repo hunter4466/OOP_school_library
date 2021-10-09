@@ -32,6 +32,7 @@ def list_books(list)
     puts "#{count}) Title: #{e.title}, Author: #{e.author}"
     count += 1
   end
+  continuefunc
 end
 
 def parent_permissionfn
@@ -109,6 +110,7 @@ def list_people(stlist, telist)
     puts "#{count}) [Teacher] Name: #{e.name}, ID: #{e.id}, Age: #{e.age}"
     count += 1
   end
+  continuefunc
 end
 
 def create_rental(bolist, stlist, telist, rentalsarray)
@@ -163,7 +165,8 @@ def list_rentals(stlist, telist)
 
     puts 'Rentals: '
     e.rentals.each do |elem|
-      puts "Date: #{elem.date}, Book '#{elem.book.title}' by #{elem.book.author}"
+      puts "Date: #{elem.date}, Book: '#{elem.book.title}' by #{elem.book.author}"
     end
   end
+  continuefunc
 end
