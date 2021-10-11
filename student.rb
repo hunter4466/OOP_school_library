@@ -1,8 +1,8 @@
-require_relative 'Person'
+require_relative 'person'
 
 class Student < Person
-  def initialize(age, name)
-    super(age, name)
+  def initialize(age, name, parentperm)
+    super(age, name, parentperm: parentperm)
     @classroom = false
   end
 

@@ -1,6 +1,6 @@
-# Morse Message Decoder
+# OOP School Library
 
-Script in Ruby to store Students and teachers
+Script in Ruby to store Students, teachers and books
 
 ## Built With
 
@@ -12,13 +12,13 @@ Script in Ruby to store Students and teachers
 
 1. Clone the repo
 
-   ```sh
+   ```sh 
    git@github.com:hunter4466/OOP_school_library.git
    ```
 
 ### Usage
 
-1. Execute program
+1. Execute program 
 
    ```sh
    ruby main.rb
