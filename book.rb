@@ -8,5 +8,5 @@ class Book
   def add_rental(rental)
     @rentals << rental
   end
-  attr_accessor :title, :author
+  attr_accessor :id, :title, :author
 end
