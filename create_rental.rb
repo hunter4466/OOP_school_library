@@ -28,7 +28,7 @@ class CreateRental
     print 'Date: '
     date = gets.chomp
     rental = Rental.new(date, books[Integer(book)], personsarray[Integer(person)])
-    rentals << rental.to_s
+    rentals << rental
     puts ' '
     puts 'Rental created successfully'
     puts ' '

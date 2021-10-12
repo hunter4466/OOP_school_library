@@ -38,6 +38,13 @@ Script in Ruby to store Students, teachers and books
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mario-chois-5a13b6b6/)
 - Angelist: [@angelist](https://angel.co/u/mario-chois)
 
+👤 **Leonardo Dias**
+
+- GitHub: [@leonardodiasb](https://github.com/leonardodiasb)
+- Twitter: [@BussularDias](https://twitter.com/BussularDias)
+- LinkedIn: [Leonardo Dias Bussular](https://www.linkedin.com/in/leonardo-dias-bussular-a67392178/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

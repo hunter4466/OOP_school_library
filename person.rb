@@ -10,8 +10,8 @@ class Person
     @rentals = []
   end
 
-  attr_accessor :name, :age, :parentperm, :corrector
-  attr_reader :id, :rentals
+  attr_accessor :id, :name, :age, :parentperm, :corrector
+  attr_reader :rentals
 
   def validate_name
     @name = @corrector.correct_name(@name)
