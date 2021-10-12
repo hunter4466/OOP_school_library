@@ -7,14 +7,13 @@ class PersonCollection
     parent_perm = gets.chomp
     case parent_perm
     when 'y' || 'Y'
-      parent_perm = true
+      true
     when 'n' || 'N'
-      parent_perm = false
+      false
     else
       puts "Option is not available, please enter 'Y' for Yes or 'N' for No "
       parent_permissionfn
     end
-    parent_perm
   end
 
   def add_person(students, teachers)
