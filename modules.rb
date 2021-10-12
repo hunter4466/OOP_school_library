@@ -4,20 +4,48 @@ require_relative 'add_person'
 require_relative 'list_people'
 require_relative 'create_rental'
 require_relative 'list_rentals'
+require 'json'
 
 class Collection
+
+  def loadbooks
+    books = JSON.parse(File.read("books.json"))
+    bookscollection = []
+    books.each do |book|
+      bookscollection << Book.new(book['title'], book['author'])
+    end
+    return bookscollection
+  end
+
+  def loadstudents
+    students = JSON.parse(File.read("students.json"))
+    studentscoll = []
+    students.each do |s|
+      studentscoll << Student.new(students.)
+    end
+  end
+
   def initialize
-    @books = []
+    @books = loadbooks
     @students = []
     @teachers = []
     @rentals = []
   end
 
+  
   def continuefunc
     puts ' '
     puts 'Press any key to continue...'
     puts ' '
     $stdin.gets
+  end
+
+  def jsonbooks
+    booksjs = []
+    @books.each do |e|
+      booksjs << { 'title' => e.title, 'author' => e.author }
+    end
+    File.write("books.json", JSON.generate(booksjs))
   end
 
   def run
@@ -52,6 +80,7 @@ class Collection
       continuefunc
       run
     when '7'
+      jsonbooks
       puts 'Thank you for using this app'
     else
       puts 'This option is not available'
