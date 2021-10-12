@@ -7,32 +7,41 @@ require_relative 'list_rentals'
 require 'json'
 
 class Collection
-
   def loadbooks
-    books = JSON.parse(File.read("books.json"))
-    bookscollection = []
-    books.each do |book|
-      bookscollection << Book.new(book['title'], book['author'])
+    File.open('books.json', 'a')
+    if File.read('books.json') != ''
+      books = JSON.parse(File.read('books.json'))
+      bookscollection = []
+      books.each do |book|
+        bookscollection << Book.new(book['title'], book['author'])
+      end
+      return bookscollection
     end
-    return bookscollection
+    []
   end
 
   def loadstudents
-    students = JSON.parse(File.read("students.json"))
-    studentscoll = []
-    students.each do |s|
-      studentscoll << Student.new(students.)
+    File.open('students.json', 'a')
+    if File.read('students.json') != ''
+      students = JSON.parse(File.read('students.json'))
+      studentscoll = []
+      students.each do |s|
+        std = Student.new(s['age'], s['name'], s['parentperm'])
+        std.id = s['id']
+        studentscoll << std
+      end
+      return studentscoll
     end
+    []
   end
 
   def initialize
     @books = loadbooks
-    @students = []
+    @students = loadstudents
     @teachers = []
     @rentals = []
   end
 
-  
   def continuefunc
     puts ' '
     puts 'Press any key to continue...'
@@ -45,7 +54,15 @@ class Collection
     @books.each do |e|
       booksjs << { 'title' => e.title, 'author' => e.author }
     end
-    File.write("books.json", JSON.generate(booksjs))
+    File.write('books.json', JSON.generate(booksjs))
+  end
+
+  def jsonstudents
+    stdjs = []
+    @students.each do |e|
+      stdjs << { 'age' => e.age, 'name' => e.name, 'parentperm' => e.parentperm, 'id' => e.id }
+    end
+    File.write('students.json', JSON.generate(stdjs))
   end
 
   def run
@@ -81,6 +98,7 @@ class Collection
       run
     when '7'
       jsonbooks
+      jsonstudents
       puts 'Thank you for using this app'
     else
       puts 'This option is not available'

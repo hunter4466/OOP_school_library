@@ -1,8 +1,8 @@
 require_relative 'corrector'
 
 class Person
-  def initialize(age, name = 'Unknown', parentperm: true, id: rand(1000))
-    @id = id
+  def initialize(age, name = 'Unknown', parentperm: true)
+    @id = rand(1000)
     @age = age
     @name = name
     @parentperm = parentperm
