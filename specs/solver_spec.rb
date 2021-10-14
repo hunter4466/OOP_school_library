@@ -5,7 +5,11 @@ describe Solver do
     it 'Should return the factorial of the given positive Integer' do
       fact = Solver.new
       test_fact = fact.factorial(4)
+      test_zero = fact.factorial(0)
+      test_negative = fact.factorial(-6)
       expect(test_fact).to eq 24
+      expect(test_zero).to eq 1
+      expect(test_negative).to eq 'Please, give a positive Integer'
     end
   end
 
