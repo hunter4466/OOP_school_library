@@ -13,7 +13,7 @@ describe Solver do
     it 'Should return the reversed string' do
       rev = Solver.new
       test_rev = rev.reverse('Mario')
-      expect(test_rev).to eq 'oiram'
+      expect(test_rev).to eq 'oiraM'
     end
   end
 end
