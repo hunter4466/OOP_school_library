@@ -28,7 +28,7 @@ describe Solver do
       expect(fb_buzz).to eq 'buzz'
     end
     it 'Should return fizzbuzz if n is divisible by 3 and 5' do
-      fb_fb = fb.fizzbuzz(25)
+      fb_fb = fb.fizzbuzz(30)
       expect(fb_fb).to eq 'fizzbuzz'
     end
     it 'Should return the integer n as a string if not divisible by 3 or 5' do
