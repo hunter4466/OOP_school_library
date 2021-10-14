@@ -8,4 +8,12 @@ describe Solver do
       expect(test_fact).to eq 24
     end
   end
+
+  context 'When testing the reverse method' do
+    it 'Should return the reversed string' do
+      rev = Solver.new
+      test_rev = rev.reverse('Mario')
+      expect(test_rev).to eq 'dranoeL'
+    end
+  end
 end
