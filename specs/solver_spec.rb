@@ -20,7 +20,7 @@ describe Solver do
   context 'When testing the fizzbuzz method' do
     fb = Solver.new
     it 'Should return fizz if n is divisible by 3' do
-      fb_fizz = fb.fizzbuzz(8)
+      fb_fizz = fb.fizzbuzz(9)
       expect(fb_fizz).to eq 'fizz'
     end
     it 'Should return buzz if n is divisible by 5' do
