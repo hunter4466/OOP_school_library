@@ -24,7 +24,7 @@ describe Solver do
       expect(fb_fizz).to eq 'fizz'
     end
     it 'Should return buzz if n is divisible by 5' do
-      fb_buzz = fb.fizzbuzz(9)
+      fb_buzz = fb.fizzbuzz(10)
       expect(fb_buzz).to eq 'buzz'
     end
     it 'Should return fizzbuzz if n is divisible by 3 and 5' do
